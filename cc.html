@@ -5,27 +5,28 @@
     <title>Your Page Title</title>
     <meta name="description" content="Description of your webpage" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <!-- NAV BAR -->
     </header>
 
-    <main>
-      <h1>Have a question? We have answers.</h1>
-      <p>
+    <main class="customerContactForm">
+      <h1 class="h1Font">Have a question? We have answers.</h1>
+      <p class="bodyFont">
         Have a question about our services?
-        <br />
+        <br /><br />
         Is there a problem we can help you resolve?
-        <br />
-        Would you like Jared Spool to give a private workshop or a presentation
+        <br /><br />
+        Would you like <strong> Jared Spool to give a private workshop or a presentation</strong>
         to your team?
-        <br />
+        <br /><br />
         We’d love to hear from you. Let us know how we can help.
       </p>
       <p>
         We’ll answer as quickly as we can. We’re a small team that works from
-        8:30 am to 5:30 pm U.S. Eastern Time on Monday through Friday.
+        <strong> 8:30 am to 5:30 pm </strong> U.S. Eastern Time on <strong> Monday through Friday.</strong>
       </p>
       <p>
         It may take us until our next business day to get an answer to you. Rest
@@ -33,74 +34,22 @@
       </p>
 
       <form id="contact_form">
-        <input type="text" placeholder="First Name" id="fname_input" required />
-        <input type="text" placeholder="Last Name" id="lname_input" required />
-        <input type="email" placeholder="Email" id="email_input" required />
+        <input type="text" placeholder="First Name" id="fname_input" class="formInput" required />
+        <input type="text" placeholder="Last Name" id="lname_input"  class="formInput" required />
+        <input type="email" placeholder="Email" id="email_input"  class="formInput" required />
 
         <div>
-          <input type="checkbox" id="loa_topic" name="topic" value="loa" />
-          <label for="loa_topic">Center Centre or Leaders of Awesomeness.</label
-          ><br />
-          <input
-            type="checkbox"
-            id="jared_presenting_topic"
-            name="topic"
-            value="jared_presenting"
-          />
-          <label for="jared_presenting_topic"
-            >I’m interested in Jared presenting to my team.</label
-          ><br />
-
-          <input type="checkbox" id="win_topic" name="topic" value="win" />
-          <label for="win_topic"
-            >How to Win Stakeholders & Influence Decisions program. </label
-          ><br />
-
-          <input type="checkbox" id="agile_topic" name="topic" value="agile" />
-          <label for="agile_topic">Taking Control of Agile UX Intensive. </label
-          ><br />
-
-          <input
-            type="checkbox"
-            id="metrics_topic"
-            name="topic"
-            value="metrics"
-          />
-          <label for="metrics_topic"
-            >UX Metrics Your Stakeholders Can’t Ignore Intensive.</label
-          ><br />
-
-          <input
-            type="checkbox"
-            id="research_topic"
-            name="topic"
-            value="research"
-          />
-          <label for="research_topic"
-            >Advanced Approaches to UX Research Intensive.</label
-          ><br />
-
-          <input
-            type="checkbox"
-            id="essentials_topic"
-            name="topic"
-            value="essentials"
-          />
-          <label for="essentials_topic">UX Strategy Essentials Series. </label
-          ><br />
-
-          <input
-            type="checkbox"
-            id="notsure_topic"
-            name="topic"
-            value="not_sure"
-          />
-          <label for="notsure_topic">I’m not sure. </label><br />
+          <select name="cars" id="cars" class="formInput">
+            <option value="volvo">Topic</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
         </div>
 
-        <textarea placeholder="Message*" id="message_input" required></textarea>
+        <textarea placeholder="Message*" id="message_input" class="formInput" required></textarea>
 
-        <button type="submit">Submit message</button>
+        <button type="submit" id="submit_button" class="boxShadow">Submit message</button>
       </form>
 
       <script>
