@@ -19,14 +19,18 @@
         <br /><br />
         Is there a problem we can help you resolve?
         <br /><br />
-        Would you like <strong> Jared Spool to give a private workshop or a presentation</strong>
+        Would you like
+        <strong>
+          Jared Spool to give a private workshop or a presentation</strong
+        >
         to your team?
         <br /><br />
         We’d love to hear from you. Let us know how we can help.
       </p>
       <p>
         We’ll answer as quickly as we can. We’re a small team that works from
-        <strong> 8:30 am to 5:30 pm </strong> U.S. Eastern Time on <strong> Monday through Friday.</strong>
+        <strong> 8:30 am to 5:30 pm </strong> U.S. Eastern Time on
+        <strong> Monday through Friday.</strong>
       </p>
       <p>
         It may take us until our next business day to get an answer to you. Rest
@@ -34,22 +38,63 @@
       </p>
 
       <form id="contact_form">
-        <input type="text" placeholder="First Name" id="fname_input" class="formInput" required />
-        <input type="text" placeholder="Last Name" id="lname_input"  class="formInput" required />
-        <input type="email" placeholder="Email" id="email_input"  class="formInput" required />
+        <input
+          type="text"
+          placeholder="First Name"
+          id="fname_input"
+          class="formInput"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          id="lname_input"
+          class="formInput"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          id="email_input"
+          class="formInput"
+          required
+        />
 
         <div>
-          <select name="cars" id="cars" class="formInput">
-            <option value="volvo">Topic</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+          <select name="topic" id="topic_select" class="formInput">
+            <option value="Center Centre or Leaders of Awesomeness">
+              Center Centre or Leaders of Awesomeness
+            </option>
+            <option value="Jared presentation">
+              I’m interested in Jared presenting to my team
+            </option>
+            <option value="WIN program">
+              How to Win Stakeholders & Influence Decisions program
+            </option>
+            <option value="Agile UX intensive">
+              Taking Control of Agile UX Intensive
+            </option>
+            <option value="UX Metrics">
+              UX Metrics Your Stakeholders Can’t Ignore Intensive
+            </option>
+            <option value="Research intensive">
+              Advanced Approaches to UX Research Intensive
+            </option>
+            <option value="Essentials">UX Strategy Essentials Series</option>
+            <option value="Other">I’m not sure</option>
           </select>
         </div>
 
-        <textarea placeholder="Message*" id="message_input" class="formInput" required></textarea>
+        <textarea
+          placeholder="Message*"
+          id="message_input"
+          class="formInput"
+          required
+        ></textarea>
 
-        <button type="submit" id="submit_button" class="boxShadow">Submit message</button>
+        <button type="submit" id="submit_button" class="boxShadow">
+          Submit message
+        </button>
       </form>
 
       <script>
@@ -57,17 +102,19 @@
         form.addEventListener("submit", async (e) => {
           e.preventDefault();
 
-          const checkboxes = Array.from(
-            document.querySelectorAll('input[type="checkbox"]:checked')
-          ).map((checkbox) => checkbox.value);
-
           const formData = {
-            site: "CenterCentre",
             first_name: document.getElementById("fname_input").value.trim(),
             last_name: document.getElementById("lname_input").value.trim(),
             email: document.getElementById("email_input").value.trim(),
-            topic: checkboxes,
+            topic: document.getElementById("topic_select").value.trim(),
             message: document.getElementById("message_input").value.trim(),
+            zendesk_subject_line: `${document
+              .getElementById("fname_input")
+              .value.trim()} ${document
+              .getElementById("lname_input")
+              .value.trim()} has a question about ${document
+              .getElementById("topic_select")
+              .value.trim()}`,
           };
 
           try {
@@ -79,11 +126,21 @@
             const res = await req.json();
 
             if (req.ok) {
-              alert("Successfully sent form!");
-              console.log(res);
+              document.getElementById("contact_form").style.display = "none";
+
+              const successMessage = document.createElement("p");
+              successMessage.innerText =
+                "Your question was successfully submitted! We will get back to you as soon as possible.";
+              successMessage.style.marginTop = "100px";
+              successMessage.style.color = "green";
+              successMessage.style.fontWeight = "900";
+
+              const paragraphs = document.querySelectorAll("p");
+              const lastParagraph = paragraphs[paragraphs.length - 1];
+
+              lastParagraph.after(successMessage);
             } else {
-              alert("Form was not sent. Error.");
-              console.log(res);
+              alert("There was an error while submitting the form");
             }
           } catch (err) {
             console.log(err);
