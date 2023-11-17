@@ -38,10 +38,6 @@ body {
   padding: 0 3em;
 }
 
-main {
-  padding: 0 3em;
-}
-
 .topNavIcon {
   background-color: #fff;
 
@@ -59,6 +55,8 @@ padding: 2em 0 0 0;
 margin: 0 1em;
 
 }
+
+
 
 .liTopNav {
   color: #00A3B4;
