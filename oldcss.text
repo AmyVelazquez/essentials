@@ -163,3 +163,78 @@
     
     }
 }
+
+
+ .logoMenu {
+   position: absolute;}
+
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    color: white;
+    border-radius: 10px;
+    z-index: 1;
+  }
+  .topnav {
+    overflow: hidden;
+  
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* top nav header on small screens and have a drop down menu */
+  .liTopNav {
+    display: none;
+  }
+
+  /* top nav header on small screens and have hamburger menu */
+  .liTopNavMoble {
+    display: inline-block;
+    color: #00A3B4;
+    font-size: 21.6px;
+    line-height: 1.45;
+    font-weight: 100;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 2em;
+    font-weight: lighter;
+  }
+
+<div class="mobile-container">
+<div class="topnav">
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa-solid fa-bars-staggered logoMenu" style="color: #00a3b4;" ></i>
+  </a>
+  <div id="myLinks">
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+
+</div></div>
+
+<div class=" dropDown"></div>
+
+<div class="menu-toggle" id="mobile-menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>

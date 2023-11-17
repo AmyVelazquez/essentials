@@ -38,20 +38,21 @@ body {
   padding: 0 3em;
 }
 
-.topNav {
+.topNavIcon {
   background-color: #fff;
-padding: 0 em;
+
 
   width: 100%;
   top: 0;
   left: 0;
  
 }
-header {
+.header {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 2em 0 3cqmin 0;
+padding: 2em 0 0 0;
+margin: 0 1em;
 
 }
 
@@ -87,6 +88,7 @@ font-weight: lighter;
 .logoPlaceHolder {
 height: 35px;
 width: 35px;
+
 }
 
 .footerForms {
@@ -167,37 +169,56 @@ width: 35px;
    
  }
 
+
+
 @media screen and (max-width: 992px) {
+  
   .customerContactForm {
     grid-template-columns: 1fr;
+    padding: 10px;
+    margin: 10px;
   }
   .centerCentreLine {
     grid-template-columns: 1fr;
+    padding: 3px;
   }
 
-
-  /* top nav header on small screens and have a drop down menu */
-  .liTopNav {
+  .topNavIcon {
     display: none;
   }
 
-  /* top nav header on small screens and have hamburger menu */
-  .liTopNavMoble {
-    display: inline-block;
-    color: #00A3B4;
-    font-size: 21.6px;
-    line-height: 1.45;
-    font-weight: 100;
-    text-decoration: none;
-    display: inline-block;
-    padding: 0 2em;
-    font-weight: lighter;
+  .logoPlaceHolder {
+    display: none;
   }
 
-
-
+  .mobleIcon {
+   height: auto;
+    width: 35px;
+  }
+.moble {
+  display: inline-block;
+  padding: 0 1em;
 }
 
-@media screen and (min-width: 1200px) {
+.breadcrumBack a {
+  color: #00A3B4;
+  text-decoration: none;
+  border-bottom: 2px solid #00A3B4;
+}
+
+.breadcrumBack a:hover {
+  color: #113438;
+  text-decoration: none;
+  border-bottom: 2px solid #113438;
+}
+}
+
+@media screen and (min-width: 992px) {
+.mobile-container {
+  display: none;
+}
+.moble {
+  display: none;
+}
 
 }
