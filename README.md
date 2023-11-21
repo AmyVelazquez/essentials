@@ -16,5 +16,7 @@ Zaps created in the backend handle purchasing essential products and handing for
 ## Podia
 The main page (essentials.centercentre.com) is *not* hosted on our sites. It is hosted on Podia [here](https://app.podia.com/dashboard). The purpose of this page is to sell the essential products and handle payments.
 
+When someone purchases a product on our podia page, the name of that product is sent to Zapier. **The name of this product must match EXACTLY what the condition flow names in Zapier are**
+
 ## Servers
 We host our code on [Plesk](https://dopractice.uie.com/smb/web/view). To update the code shown on the site, go down to the essentialscontact.centercentre.com subdomain on the list and click the git option. The git repo connected to this server is this repo. Push new code to this repo, pull the code in Plesk, then click deploy at the bottom of plesk page to update the website. Remember, these pages are different than our Podia page.
