@@ -11,7 +11,7 @@ Along with the code, it provides explanations and resources on how all backend l
 [Formcrafts](https://formcrafts.com/dashboard/forms) was used to build the custom forms for all three contact pages above. You can log in and find each form on our dashboard page. The HTML code for the forms injects a form into the page with an external script from Formcrafts.
 
 ## Zapier
-Zaps created in the backend handle purchasing essential projects and handing form submission data for all three forms. You can find all zaps associated with essentials [here](https://zapier.com/app/zaps/folder/1804846)
+Zaps created in the backend handle purchasing essential products and handing form submission data for all three forms. You can find all zaps associated with essentials [here](https://zapier.com/app/zaps/folder/1804846)
 
 ## Podia
 The main page (essentials.centercentre.com) is *not* hosted on our sites. It is hosted on Podia [here](https://app.podia.com/dashboard). The purpose of this page is to sell the essential products and handle payments.
