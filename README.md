@@ -1,15 +1,20 @@
-# Essentials Contact Forms
+# Essentials 
 
-Above there are 3 different html files each representing a form on the essentials site
+This repo contains all the code for the 3 essential forms
+- Contact Us
+- Request a receipts
+- Team Access
 
-- contact.html (https://essentialscontact.centercentre.com/)
-- receipt.html (https://essentialscontact.centercentre.com/receipt)
-- team.html (https://essentialscontact.centercentre.com/team)
+Along with the code, it provides explanations and resources on how all backend logic works.
 
-All the forms featured on each route are built using https://formcrafts.com/, login to edit forms
+## formcrafts
+[Formcrafts](https://formcrafts.com/dashboard/forms) was used to build the custom forms for all three contact pages above. You can log in and find each form on our dashboard page. The HTML code for the forms injects a form into the page with an external script from Formcrafts.
 
-https://essentials.centercentre.com/ (main site) is hosted on Podia, our dns records point to it. The reason why we don't build the forms on this url is we dont have access to the code, Podia handles all of that. There is no option for custom HTML or even a form plugin on podia, so all forms are hosted on our servers found here - https://dopractice.uie.com/smb/web/view
+## Zapier
+Zaps created in the backend handle purchasing essential projects and handing form submission data for all three forms. You can find all zaps associated with essentials [here](https://zapier.com/app/zaps/folder/1804846)
 
-## Automations
+## Podia
+The main page (essentials.centercentre.com) is *not* hosted on our sites. It is hosted on Podia [here](https://app.podia.com/dashboard). The purpose of this page is to sell the essential products and handle payments.
 
-[FILL IN MORE HERE ONCE BUILT]
+## Servers
+We host our code on [Plesk](https://dopractice.uie.com/smb/web/view). To update the code shown on the site, go down to the essentialscontact.centercentre.com subdomain on the list and click the git option. The git repo connected to this server is this repo. Push new code to this repo, pull the code in Plesk, then click deploy at the bottom of plesk page to update the website. Remember, these pages are different than our Podia page.
