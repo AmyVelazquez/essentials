@@ -1,7 +1,11 @@
+:root {
+    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
 body {
-    font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", 
-    Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 18px;
     line-height: 1.5;
 }
 
@@ -44,8 +48,6 @@ main {
 
 .topNavIcon {
   background-color: #fff;
-
-
   width: 100%;
   top: 0;
   left: 0;
@@ -55,14 +57,14 @@ main {
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 2em 0 0 0;
+padding: 1em 0 0 0;
 margin: 0 1em;
 
 }
 
 .liTopNav {
   color: #00A3B4;
-  font-size: 21.6px;
+  font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
   text-decoration: none;
