@@ -1,20 +1,15 @@
-:root {
-    --system-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
-
-
 body {
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 18px;
-    line-height: 1.5;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .customerContactForm {
-margin: 0 ;
-padding: 4em 2% 2em 2%;
-display: grid;  
-grid-template-columns: 1fr 1fr;
-grid-gap: 3em;
+  margin: 0;
+  padding: 4em 2% 2em 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3em;
 }
 
 body {
@@ -27,19 +22,19 @@ body {
   line-height: 1;
 }
 
-.weightIncress{
+.weightIncress {
   font-weight: 900;
 }
 
 .container {
-  max-width: 1200px; /* Set the maximum width of the container */
+  max-width: 970px; /* Set the maximum width of the container */
+  /*max-width: 1200px; /* Set the maximum width of the container */
   margin: 0 auto; /* Center the container horizontally */
   overflow: hidden; /* Hide any content overflowing the container */
 }
 
 .listItem {
-
-  padding: 0 3em;
+  padding: 0 1em;
 }
 
 main {
@@ -51,27 +46,26 @@ main {
   width: 100%;
   top: 0;
   left: 0;
- 
 }
 .header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1em 0 0 0;
-margin: 0 1em;
-
+  display: flex;
+  flex-direction: row;
+  flex: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0 0 0;
+  margin: 0 1em;
+  gap: 2em;
 }
 
 .liTopNav {
-  color: #00A3B4;
+  color: #00a3b4;
   font-size: 18px;
   line-height: 1.45;
   font-weight: 700;
   text-decoration: none;
-display: inline-block;
-padding: 0 2em;
-
-
+  display: inline-block;
+  padding: 0 1em;
 }
 *,
 *::before,
@@ -81,20 +75,19 @@ padding: 0 2em;
   box-sizing: border-box;
 }
 
-.liTopNav a{
+.liTopNav a {
   text-decoration: none;
-  color: #00A3B4;
+  color: #00a3b4;
 }
 
-.liTopNav a:hover{
-  border-bottom: 2px solid #00A3B4;
+.liTopNav a:hover {
+  border-bottom: 2px solid #00a3b4;
   text-decoration: none;
 }
 
 .logoPlaceHolder {
-height: 35px;
-width: 35px;
-
+  height: 35px;
+  width: 35px;
 }
 
 .footerForms {
@@ -102,7 +95,6 @@ width: 35px;
   color: white;
   padding: 2em;
 }
-
 
 .bottomNavLi a {
   color: #fff;
@@ -112,13 +104,12 @@ width: 35px;
 
 .liTopNavMoble {
   display: none;
-
 }
 .centerCentreLine {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
- grid-gap: 3em;
- padding-bottom: 150px;
+  grid-gap: 3em;
+  padding-bottom: 150px;
 }
 
 .bottomLinks a {
@@ -126,59 +117,46 @@ width: 35px;
   text-decoration: none;
   border-bottom: 2px solid #fff;
   font-size: 14px;
-
 }
 
 .bottomLinks {
   display: inline-block;
   padding: 2em 1em 0 0;
-
 }
 
 .centerLink a:hover {
- color: lightgray;
+  color: lightgray;
   text-decoration: none;
   border-bottom: 2px solid lightgray;
-
 }
 
 .centerLink a {
   color: #fff;
   text-decoration: none;
   border-bottom: 2px solid #fff;
-  
 }
 
 .bottomNavLi {
   color: #fff;
-  ;
- 
-  font-weight: 100;
+  font-weight: 200;
 
   display: inline-block;
   padding: 0 1em 0 0;
-
-
 }
 
 .bottomNavLi a:hover {
   color: lightgray;
-   text-decoration: none;
-   border-bottom: 2px solid lightgray;
- 
- }
- 
- .bottomNavLi a {
-   color: #fff;
-   text-decoration: none;
-   border-bottom: 2px solid #fff;
-   
- }
+  text-decoration: none;
+  border-bottom: 2px solid lightgray;
+}
 
-
+.bottomNavLi a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px solid #fff;
+}
 
 @media screen and (max-width: 992px) {
-  
   .customerContactForm {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -198,33 +176,32 @@ width: 35px;
   }
 
   .mobleIcon {
-   height: auto;
+    height: auto;
     width: 35px;
   }
-.moble {
-  display: inline-block;
-  padding: 0 1em;
-}
+  .moble {
+    display: inline-block;
+    padding: 0 1em;
+  }
 
-.breadcrumBack a {
-  color: #00A3B4;
-  text-decoration: none;
-  border-bottom: 2px solid #00A3B4;
-}
+  .breadcrumBack a {
+    color: #00a3b4;
+    text-decoration: none;
+    border-bottom: 2px solid #00a3b4;
+  }
 
-.breadcrumBack a:hover {
-  color: #113438;
-  text-decoration: none;
-  border-bottom: 2px solid #113438;
-}
+  .breadcrumBack a:hover {
+    color: #113438;
+    text-decoration: none;
+    border-bottom: 2px solid #113438;
+  }
 }
 
 @media screen and (min-width: 992px) {
-.mobile-container {
-  display: none;
-}
-.moble {
-  display: none;
-}
-
+  .mobile-container {
+    display: none;
+  }
+  .moble {
+    display: none;
+  }
 }
