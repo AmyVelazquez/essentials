@@ -1,7 +1,45 @@
+/*Imported from main page */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* End of imported styles */
+
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
   font-size: 18px;
   line-height: 1.5;
+  margin: 0;
 }
 
 .customerContactForm {
@@ -27,10 +65,11 @@ body {
 }
 
 .container {
-  max-width: 970px; /* Set the maximum width of the container */
-  /*max-width: 1200px; /* Set the maximum width of the container */
-  margin: 0 auto; /* Center the container horizontally */
-  overflow: hidden; /* Hide any content overflowing the container */
+  position: relative;
+  margin: 0px auto;
+  font-size: 18px;
+  max-width: 100%;
+  width: 970px;
 }
 
 .listItem {
@@ -47,32 +86,36 @@ main {
   top: 0;
   left: 0;
 }
+
 .header {
   display: flex;
   flex-direction: row;
   flex: 100%;
-  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  column-gap: 1.5rem;
   padding: 1em 0 0 0;
   margin: 0 1em;
   gap: 2em;
 }
 
-.liTopNav {
-  color: #00a3b4;
-  font-size: 18px;
-  line-height: 1.45;
-  font-weight: 700;
-  text-decoration: none;
-  display: inline-block;
-  padding: 0 1em;
+.ulTopNav {
+  display: flex;
+  flex-wrap: wrap;
 }
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+.liTopNav {
+  color: rgb(0, 163, 180);
+  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  font-size: 20.7px;
+  letter-spacing: 0em;
+  line-height: 1.15;
+  font-weight: 700 !important;
+  display: inline-block;
+  padding: 0 10px;
+  gap: 0.5rem 1.25rem;
 }
 
 .liTopNav a {
@@ -85,8 +128,8 @@ main {
   text-decoration: none;
 }
 
-.logoPlaceHolder {
-  height: 35px;
+.desktopLogo {
+  height: auto;
   width: 35px;
 }
 
@@ -102,7 +145,7 @@ main {
   border-bottom: 2px solid #fff;
 }
 
-.liTopNavMoble {
+.liTopNavMobile {
   display: none;
 }
 .centerCentreLine {
@@ -171,15 +214,15 @@ main {
     display: none;
   }
 
-  .logoPlaceHolder {
+  .desktopLogo {
     display: none;
   }
 
-  .mobleIcon {
+  .mobileIcon {
     height: auto;
     width: 35px;
   }
-  .moble {
+  .mobile {
     display: inline-block;
     padding: 0 1em;
   }
@@ -201,7 +244,7 @@ main {
   .mobile-container {
     display: none;
   }
-  .moble {
+  .mobile {
     display: none;
   }
 }
