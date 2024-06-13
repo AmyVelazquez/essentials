@@ -217,6 +217,8 @@ main {
 
   .desktopLogo {
     display: none;
+    height: auto;
+    width: 35px;
   }
 
   .mobileIcon {
