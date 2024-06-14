@@ -131,7 +131,25 @@ main {
 
 .desktopLogo {
   height: auto;
-  width: 35px;
+  width: 35px !important;
+}
+
+.mobileIcon {
+  height: auto;
+
+  width: 35px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hide-on-desktop {
+    display: none;
+  }
 }
 
 .footerForms {
@@ -214,15 +232,12 @@ main {
   .topNavIcon {
     display: none;
   }
-
-  .desktopLogo {
-    display: none;
-  }
-
   .mobileIcon {
     height: auto;
-    width: 35px;
+
+    width: 35px !important;
   }
+
   .mobile {
     display: inline-block;
     padding: 0 1em;
