@@ -139,10 +139,6 @@ main {
   width: 35px !important;
 }
 
-/*hide icons on desktop and show on mobile*/
-
-
-
 .footerForms {
   background-color: black;
   color: white;
@@ -255,6 +251,8 @@ main {
     display: none;
   }
 }
+
+/*hide icons on desktop and show on mobile*/
 @media only screen and (max-width: 992px) {
   .hide-on-mobile {
     display: none;
