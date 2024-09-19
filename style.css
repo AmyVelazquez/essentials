@@ -32,6 +32,7 @@ textarea,
 select {
   font: inherit;
 }
+
 /* End of imported styles */
 
 body {
@@ -41,6 +42,11 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
 }
 
 .customerContactForm {
@@ -51,11 +57,6 @@ body {
   grid-gap: 3em;
 }
 
-body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  overflow-x: hidden; /* Hide horizontal overflow */
-}
 
 .h1Font {
   line-height: 1;
@@ -70,7 +71,11 @@ body {
   margin: 0px auto;
   font-size: 18px;
   max-width: 100%;
-  width: 970px;
+  width: 55em;
+  /* width: 970px; */
+  /* margin: 0 auto; */
+  padding: 2em;
+
 }
 
 .listItem {
@@ -79,6 +84,7 @@ body {
 
 main {
   padding: 0 3em;
+  flex-grow: 1;
 }
 
 .topNavIcon {
@@ -142,7 +148,9 @@ main {
 .footerForms {
   background-color: black;
   color: white;
-  padding: 2em;
+  /* padding: 2em 0 2em 0; */
+  margin-top: auto;
+  width: 100%;
 }
 
 .bottomNavLi a {
@@ -154,6 +162,7 @@ main {
 .liTopNavMobile {
   display: none;
 }
+
 .centerCentreLine {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -211,6 +220,7 @@ main {
     padding: 10px;
     margin: 10px;
   }
+
   .centerCentreLine {
     grid-template-columns: 1fr;
     padding: 3px;
@@ -219,6 +229,7 @@ main {
   .topNavIcon {
     display: none;
   }
+
   .mobileIcon {
     height: auto;
 
@@ -247,6 +258,7 @@ main {
   .mobile-container {
     display: none;
   }
+
   .mobile {
     display: none;
   }
@@ -257,6 +269,7 @@ main {
   .hide-on-mobile {
     display: none;
   }
+
 }
 
 /*hide icons on mobile and show on desktop*/

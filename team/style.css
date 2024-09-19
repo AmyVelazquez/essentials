@@ -42,6 +42,9 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .customerContactForm {
@@ -74,7 +77,10 @@ body {
   margin: 0px auto;
   font-size: 18px;
   max-width: 100%;
-  width: 970px;
+  width: 55em;
+  /* width: 970px; */
+  /* margin: 0 auto; */
+  padding: 2em;
 }
 
 .listItem {
@@ -159,7 +165,9 @@ main {
 .footerForms {
   background-color: black;
   color: white;
-  padding: 2em;
+  /* padding: 2em 0 2em 0; */
+  margin-top: auto;
+  width: 100%;
 }
 
 .bottomNavLi a {
@@ -261,6 +269,11 @@ main {
     text-decoration: none;
     border-bottom: 2px solid #113438;
   }
+
+  .footerForms {
+    width: 100%;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
