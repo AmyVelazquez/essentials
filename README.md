@@ -9,7 +9,7 @@ This repo contains all the code for the 2 essential forms
 Along with the code, it provides explanations and resources on how all backend logic works.
 
 ## forms
-The forms were recreated by [@Antosha9108](https://github.com/Antosha9108) using the Zendesk API. The Contact Us and Team Access forms. 
+The Contact Us, Team Access, and Need A Receipt forms were recreated by [@Antosha9108](https://github.com/Antosha9108) using the Zendesk API.
 
 
 ## Zapier
